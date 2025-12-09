@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adam HTML Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgba(255, 255, 255, 0.705);
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: rgb(255, 255, 255);
+      padding: 10px;
+      display: flex;
+      justify-content: space-around;
+      border-bottom: 1px solid #ffffff;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      padding: 5px 10px;
+    }
+
+    h1, h2, h3, h4, h5, p {
+      text-align: left; /* Align text to the left */
+      margin-left: 20px; /* Add some left margin for better spacing */
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#project">Project</a>
+    <a href="#contact">Contact</a>
+    <img src="21004063.jpg" style="width:50px; height:50px; margin-left:950px; margin-top: 0px;">
+  </nav>
+
+  <main>
+    <h1>Welcome to Adam App</h1>
+
+    <h2>This is my project to graduate from HTML</h2>
+
+    <h3>This website showcases some of the Python projects I developed while studying on the Algorithmics platform. I graduated from Algorithmics in Python, and I created this site so people can explore and try out what I've built.</h3>
+
+    <h4>How can you run my code on your machine?</h4>
+    <h5>
+      • First, the user needs to download and install Visual Studio Code on their device.<br>
+      • Next, they should install the Python language on their system.<br>
+      • Then, they can go to the Extensions section in Visual Studio Code and add the Python extension from there.<br>
+      • After setting everything up, they can paste your code into Visual Studio Code.<br>
+      • Finally, they just run the code, and it will work smoothly on their machine.
+    </h5>
+
+    <p style="margin-left: 125px;">The first project is calculator</p>
+    <img src="852a9059-dfb9-4f40-9293-04496f4b713d.jpg" style="width:400px; height:400px; margin-left:20px; margin-right: 20px;">
+    <p>This is the code to run the calculator:</p>
+    <pre>
+num1 = int(input("enter first number:"))
+num2 = int(input("enter second number:"))
+
+operation = print("add/a/A/+, (S/s/-)subtract, (M/m/*)ultiply, (D/d//)divide, or (off) to exit")
+
+user = input("enter operation: ")
+
+while user.lower() != "off":
+  if user.lower() in ["a", "+"]:
+    print(num1 + num2)
+  elif user.lower() in ["s", "-"]:
+    print(num1 - num2)
+  elif user.lower() in ["m", "*"]:
+    print(num1 * num2)
+  elif user.lower() in ["d", "/"]:
+    if num2 == 0:
+      print("Error: Division by zero")
+    else:
+      print(num1 / num2)
+  else:
+    print("invalid operation")
+  user = input("enter operation: ")
+    </pre>
+
+    <p style="margin-left: 100px;">The second project is school project</p>
+    <img src="c:\Users\ADAM'S~1\AppData\Local\Temp\Rar$DRa12044.7699.rartemp\16190.jpg" style="width:400px; height:400px; margin-left:20px; margin-right: 20px;">
+    <p>This is the code:</p>
+    <pre>
+print("welcome to AL Rowad school")
+
+name = input("enter your name")
+
+age = int(input(name + " enter your age\n"))
+
+if age == 4:
+  print(name + " you are in KG2 ")
+elif age == 0:
+  print(name + " you are not born yet ")
+elif age <= 3:
+  print(name + " you are in KG1")
+elif age <= 5:
+  print(name + " you are in KG2 grade")
+elif age == 6:
+  print(name + " you are in first grade")
+elif age == 7:
+  print(name + " you are in second grade")
+elif age == 8:
+  print(name + " you are in third grade")
+elif age == 9:
+  print(name + " you are in fourth grade")
+elif age == 10:
+  print(name + " you are in fifth grade")
+elif age == 11:
+  print(name + " you are in sixth grade")
+elif age == 12:
+  print(name + " you are in seventh grade")
+elif age == 13:
+  print(name + " you are in eighth grade")
+elif age == 14:
+  print(name + " you are in ninth grade")
+elif age == 15:
+  print(name + " you are in tenth grade")
+elif age == 16:
+  print(name + " you are in eleventh grade")
+elif age == 17:
+  print(name + " you are in twelfth grade")
+elif age == 18:
+  print(name + " you are in university")
+elif age == 19:
+  print(name + " you are in university")
+elif age == 20:
+  print(name + " you are in university")
+elif age == 21:
+  print(name + " you are in university")
+elif age == 22:
+  print(name + " you are in university")
+elif age == 110:
+  print(name + " you are dead ")
+elif age >= 111:
+  print(name + " you are dead")
+elif age >= 60:
+  print(name + " you are elderly ")
+else:
+  print(name + " you are in work")
+
+print(input("do you want to exit"))
+    </pre>
+
+    <p style="margin-left: 70px; margin-right: 20px;">The last project is rock_paper_scissor_game</p>   
+    <img src="c:\Users\Adam's pc\OneDrive\Adam Abualia\photos\Adam photos\Screenshot 2025-12-08 211707.png" style="width:400px; height:400px; margin-left:20px; margin-right: 20px;">  
+    <p>This is the code:</p>
+    <pre>
+print("welcome to rock paper scissors bot")
+
+for i in range(3):
+  user = input("choose rock, paper or scissors: ")
+  if user == 'rock':
+    print("you win, I chose scissors")
+  elif user == 'paper':
+    print("I win, I chose scissors") 
+  elif user == 'scissors':
+    print('you win, I chose paper')
+  else:
+    print("invalid input, please choose rock, paper or scissors")
+     
+  print(f"{i + 1} tries completed")
+    </pre>
+  </main>
+  <footer style="margin-left:230px;margin-right:20px"><p>This is my website in 2025</p></footer> 
+  <footer style="margin-left:230px;margin-right:20px"><p>Made by Adam Abualia</p></footer> 
+  <footer style="margin-left:230px;margin-right:20px"><p>Contact with me on aabualia2000@gmail.com</p></footer> 
+</body>
+</html>
